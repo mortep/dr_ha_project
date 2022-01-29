@@ -21,7 +21,7 @@ The main region is `us-east-2` and the DR region is `us-west-1`
 *VPC*: Network where the EC2 instances and the databases are located. We create a VPC in `us-east-2` for the main assets and another VPC in `us-west-1` for 
 the DR assets.
 
-*EC2 instances*: These Ubuntu servers host the Flask application. Each region has 3 instances distributed among different availability zones within the region. For example, `us-east-2a` and `us-east-2b` for the main region and `us-west-1b` and `us-west-1c` for the DR region.
+*EC2 instances*: These Ubuntu servers host the Flask application. Each region has 3 instances distributed among different availability zones within the region. For example, `us-east-2a` and `us-east-2b` for the main region and `us-west-1a` and `us-west-1b` for the DR region.
 
 *EKS cluster*: A kubernetes cluster running the monitoring stack, i.e., prometheus and grafana, running in 2 nodes (in different AZs) to make it highly available.
 
