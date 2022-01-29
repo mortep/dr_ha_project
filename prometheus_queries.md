@@ -16,4 +16,4 @@
 ## Error Budget - Remaining Error Budget
 ### The error budget is 20%
 
-100*(1 - (1 - sum(increase(flask_http_request_total{job="ec2", status=~"2.*"}[1m])) / sum(increase(flask_http_request_total{job="ec2"}[1m]))) / 0.20)
+`100*(1 - (1 - sum(increase(flask_http_request_total{job="ec2", status=~"2.*"}[1m])) / sum(increase(flask_http_request_total{job="ec2"}[1m]))) / 0.20)`
