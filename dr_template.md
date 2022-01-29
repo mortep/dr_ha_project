@@ -1,7 +1,8 @@
 # Infrastructure
 
 ## AWS Zones
-Identify your zones here
+
+The main region is `us-east-2` and the DR region is `us-west-1`
 
 ## Servers and Clusters
 

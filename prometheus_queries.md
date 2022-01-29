@@ -6,7 +6,7 @@
 ## Latency SLI
 ### 90% of requests finish in these times
 
-`histogram_quantile(0.90, sum(rate(http_request_duration_seconds_bucket{job="website"}[30s])) by (le, verb))`
+`histogram_quantile(0.90, sum(rate(http_request_duration_seconds_bucket{job="website"}[5m])) by (le, verb))`
 
 ## Throughput
 ### Successful requests per second
